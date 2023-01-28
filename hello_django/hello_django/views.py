@@ -11,4 +11,4 @@ def about(request):  # Привязываем страницу about.html и п�
 #     return render(request,'about.html')
 
 def home(request):
-    return HttpResponse('This is my first home')
+    return render(request, 'home.html', {'gretting': 'Your_name'})
